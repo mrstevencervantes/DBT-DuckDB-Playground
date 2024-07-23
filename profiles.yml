@@ -1,0 +1,8 @@
+playground:
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('DB_NAME') }}"
+      extensions:
+        - sqlite_scanner
+        - postgres_scanner
